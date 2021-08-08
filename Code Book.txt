@@ -1,0 +1,18 @@
+The run_analysis.R script performs the data preparation and then followed by the 5 steps required as described in the course project¡¯s definition.
+
+1. Download the dataset directly using given URL and extracted under the folder called "UCI HAR Dataset"
+
+2. library "tidyverse" package
+
+3. For step 1, read in relevant files into R first and assign column names. Using R command "rbind" and "cbind" to merge the training and the test sets to create one data set.
+
+4. For step 2, use dplyr::select with contains() to subset the columns "subject", "label", and only the measurements on the mean and standard deviation for each measurement.
+
+5. For step 3, replace "label" column with corresponding descriptive activity names in activity_labels.txt 
+
+6. For step 4, first extract column names out and assign them to a new vector called "name" for easier manipulation. Use stringr::str_replace_all to replace corresponding strings.
+
+7. For step 5, "data5" is created by sumarizing "data2" taking the means of each variable for each activity and each subject, after groupped by subject and activity.
+
+
+
